@@ -1,0 +1,6 @@
+src: src/index.jade
+dest: www/
+
+pipeline:
+  jade:
+    pretty: true

@@ -1,0 +1,10 @@
+src: src/**/*.jade
+dest: www/js
+
+pipeline:
+  jade:
+    doctype: html
+  angular-templatecache:
+    filename: boilerplate-templates.js
+    module: boilerplate.templates
+    standalone: true
