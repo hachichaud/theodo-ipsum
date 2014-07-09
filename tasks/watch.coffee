@@ -1,16 +1,11 @@
 gulp = require 'gulp'
-connect = require 'gulp-connect'
-historyApiFallback = require 'connect-history-api-fallback'
+webserver = require 'gulp-webserver'
 
-gulp.task 'connect', ['build'], ->
-  connect.server
-    root: 'www/'
+gulp.task 'webserver', ['build'], ->
+  gulp.src 'www'
+  .pipe webserver
     livereload: true
-    port: 8000
-    middleware: (connect, opt) ->
-      [
-        historyApiFallback ## fallback to index.html if no static file found
-      ]
+    fallback: 'index.html'
 
-gulp.task 'watch', ['connect'], ->
-  gulp.watch 'www/**', -> connect.reload
+gulp.task 'watch', ['webserver'], ->
+  gulp.watch 'src/**', ['build']

@@ -11,13 +11,12 @@
   "dependencies": {
     "bower": "*",
     "coffee-script": "*",
-    "connect-history-api-fallback": "*",
     "gulp": "*",
     "gulp-plug": "*",
     "gulp-angular-templatecache": "*",
     "gulp-coffee": "*",
     "gulp-concat": "*",
-    "gulp-connect": "*",
+    "gulp-webserver": "*",
     "gulp-jade": "*",
     "gulp-less": "*"
   },
