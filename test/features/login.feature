@@ -5,4 +5,4 @@ Feature: Login
     And I am on the homepage
 
   Scenario: Connection
-    Then I should see "Connection"
+    Then I should see "Erreur"

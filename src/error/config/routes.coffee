@@ -4,5 +4,6 @@ angular.module 'boilerplate.error'
   .state 'error',
     url: '/error'
     templateUrl: 'error/views/view.html'
+    controller: 'errorController'
 
   $urlRouterProvider.otherwise '/error'
