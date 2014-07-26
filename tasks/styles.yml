@@ -1,5 +1,7 @@
-src: src/app.less
+src: src/app.scss
 dest: www/css/
 
 pipeline:
-  less:
+  sass:
+  concat:
+    'main.css'
