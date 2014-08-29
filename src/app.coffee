@@ -3,7 +3,10 @@
 angular.module 'boilerplate', [
   'ng'
   'pascalprecht.translate'
+
   'boilerplate.templates'
+
+  'boilerplate.home'
   'boilerplate.error'
 ]
 

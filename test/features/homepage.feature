@@ -1,8 +1,8 @@
-Feature: Login
+Feature: Homepage
 
   Background:
     Given I am on angular
     And I am on the homepage
 
-  Scenario: Connection
-    Then I should see "Erreur"
+  Scenario:
+    Then I should see "Welcome"

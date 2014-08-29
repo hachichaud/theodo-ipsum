@@ -3,14 +3,14 @@
   "version": "0.0.1",
   "dependencies": {
     "angular": "*",
-    "angular-strap": "*",
+    "angular-foundation": "*",
     "angular-translate": "*",
     "angular-ui-router": "*",
     "angulartics": "*",
-    "bootstrap": "*",
     "font-awesome": "*",
     "lodash": "*",
-    "momentjs": "*"
+    "momentjs": "*",
+    "foundation": "*"
   },
   "devDependencies": {
     "angular-mocks": "*"

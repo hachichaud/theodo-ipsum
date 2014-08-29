@@ -29,6 +29,7 @@ npm run test:unit
 # BROWSER  -> chrome | firefox | phantomjs
 # SELENIUM -> http://127.0.0.1:4444/wd/hub
 # You need specify a selenium server or to install one with!
+# Local server must be launched: npm start &
 node_modules/.bin/webdriver-manager update
 HOST=http://localhost:8000 BROWSER=chrome npm run test:functional
 npm run test:functional

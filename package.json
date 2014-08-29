@@ -6,7 +6,7 @@
     "start": "gulp watch",
     "test": "karma start test/karma-unit.coffee --single-run",
     "test:unit": "karma start test/karma-unit.coffee",
-    "test:functional": "protractor --require coffee-script/register test/protractor.conf.coffee"
+    "test:functional": "webdriver-manager update && protractor --require coffee-script/register test/protractor.conf.coffee"
   },
   "dependencies": {
     "bower": "*",
@@ -18,7 +18,7 @@
     "gulp-concat": "*",
     "gulp-webserver": "*",
     "gulp-jade": "*",
-    "gulp-less": "*"
+    "gulp-sass": "*"
   },
   "devDependencies": {
     "chai": "*",

@@ -1,0 +1,6 @@
+@import "../bower_components/foundation/scss/foundation.scss";
+
+// Here comes the modules of the app
+@import
+  "home/module.scss",
+  "error/module.scss";

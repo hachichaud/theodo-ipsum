@@ -3,7 +3,10 @@ angular.module 'boilerplate.error'
   $stateProvider
   .state 'error',
     url: '/error'
-    templateUrl: 'error/views/view.html'
     controller: 'errorController'
+    templateUrl: 'error/views/error.html'
+  .state 'error.not-found',
+    url: '/not-found'
+    templateUrl: 'error/views/not-found.html'
 
-  $urlRouterProvider.otherwise '/error'
+  $urlRouterProvider.otherwise '/error/not-found'
