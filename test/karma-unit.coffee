@@ -6,8 +6,9 @@ module.exports = (config) ->
       'www/js/boilerplate-vendor.js'
       'www/js/boilerplate-templates.js'
       'bower_components/angular-mocks/angular-mocks.js'
-      'app/**/module.coffee'
-      'app/**/*.coffee'
+      'src/app.coffee'
+      'src/**/module.coffee'
+      'src/**/*.coffee'
       'test/specs/**/*.coffee'
     ]
 
@@ -18,7 +19,7 @@ module.exports = (config) ->
 
     preprocessors:
       'test/specs/**/*.coffee': 'coffee'
-      'app/**/*.coffee':  'coffee'
+      'src/**/*.coffee': 'coffee'
 #      'app/**/*.coffee':  'coverage'
 
     reporters: [

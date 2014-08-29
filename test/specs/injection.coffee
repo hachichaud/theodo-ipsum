@@ -1,10 +1,13 @@
-describe 'Login Controller', ->
+describe 'Error Controller', ->
   $scope = undefined
+  errorController = undefined
 
   beforeEach ->
-    module 'boilerplate'
-    inject ($rootScope) ->
+    module 'boilerplate.error'
+    inject ($rootScope, $controller) ->
       $scope = $rootScope.$new()
+      errorController = $controller 'errorController',
+        $scope: $scope
 
-  it 'should create the module', ->
-    loginController.should.exist
+  it 'should create the controller', ->
+    errorController.should.exist
