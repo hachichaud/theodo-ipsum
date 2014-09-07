@@ -1,7 +1,7 @@
-src: src/app.scss
+src: src/main.scss
 dest: www/css/
 
 pipeline:
   sass:
   concat:
-    'main.css'
+    'boilerplate-styles.css'
