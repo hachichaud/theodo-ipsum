@@ -3,5 +3,5 @@
 angular.module 'boilerplate', [
   'boilerplate.templates'
   'boilerplate.utils'
-  'boilerplate.home'
+  'boilerplate.landing'
 ]

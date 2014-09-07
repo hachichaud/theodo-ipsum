@@ -1,4 +1,4 @@
-angular.module 'boilerplate.home'
+angular.module 'boilerplate.landing'
 .config ($translateProvider) ->
   $translateProvider.translations 'en',
     HOME_TITLE: 'Welcome'
