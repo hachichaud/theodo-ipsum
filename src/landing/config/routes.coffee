@@ -1,6 +1,6 @@
 angular.module 'boilerplate.home'
 .config ($stateProvider) ->
   $stateProvider
-  .state 'home',
+  .state 'landing',
     url: '/'
-    templateUrl: 'home/views/home.html'
+    templateUrl: 'landing/views/view.html'

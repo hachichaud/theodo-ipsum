@@ -5,9 +5,7 @@ angular.module 'boilerplate', [
   'pascalprecht.translate'
 
   'boilerplate.templates'
-
   'boilerplate.home'
-  'boilerplate.error'
 ]
 
 .config ($locationProvider) ->

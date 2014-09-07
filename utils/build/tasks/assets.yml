@@ -1,4 +1,4 @@
-src: src/assets/**
+src: src/**/assets/**
 dest: www/
 
 cache: true
