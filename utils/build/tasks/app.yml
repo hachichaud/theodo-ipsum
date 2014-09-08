@@ -1,8 +1,0 @@
-src: src/**/*.coffee
-dest: www/js/
-
-pipeline:
-  coffee:
-    bare: true # don't wrap each file into scope function
-  concat:
-    boilerplate-app.js

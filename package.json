@@ -16,9 +16,10 @@
     "gulp-angular-templatecache": "*",
     "gulp-coffee": "*",
     "gulp-concat": "*",
-    "gulp-webserver": "*",
     "gulp-jade": "*",
-    "gulp-sass": "*"
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-webserver": "*"
   },
   "devDependencies": {
     "chai": "*",
