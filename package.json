@@ -12,11 +12,12 @@
     "bower": "*",
     "coffee-script": "*",
     "gulp": "*",
-    "gulp-plug": "*",
     "gulp-angular-templatecache": "*",
     "gulp-coffee": "*",
     "gulp-concat": "*",
     "gulp-jade": "*",
+    "gulp-plug": "*",
+    "gulp-rename": "^1.2.0",
     "gulp-sass": "*",
     "gulp-sourcemaps": "*",
     "gulp-webserver": "*"
