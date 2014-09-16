@@ -1,19 +1,11 @@
-# We have access to protractor API : https://github.com/angular/protractor/blob/master/docs/api.md
-# $ to select the first matching element
-# $$ to select multiple elements
-
-global.chai = require 'chai'
-global.assert = chai.assert
-
 module.exports.config =
+  framework: 'cucumber'
+
   specs: [
     'features/*.feature'
   ]
 
   capabilities:
-    browserName: process.env.BROWSER || 'firefox'
+    browserName: process.env.BROWSER || 'chrome'
 
-  framework: 'cucumber'
-
-  # 'http://127.0.0.1:4444/wd/hub'
   seleniumAddress: process.env.SELENIUM || null

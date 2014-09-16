@@ -13,10 +13,6 @@ npm start
 # http://localhost:8000
 ```
 
-### Livereload
-
-[Chrome extention](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
-
 ### Tests
 
 ```bash
@@ -34,3 +30,13 @@ node_modules/.bin/webdriver-manager update
 HOST=http://localhost:8000 BROWSER=chrome npm run test:functional
 npm run test:functional
 ```
+
+### Submodule
+
+```
+git submodule foreach git pull origin master
+```
+
+### Livereload
+
+[Chrome extention](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
