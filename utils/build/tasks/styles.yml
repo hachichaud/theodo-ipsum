@@ -1,4 +1,4 @@
-src: src/main.scss
+src: src/**/*.scss
 dest: www/css/
 
 pipeline:
