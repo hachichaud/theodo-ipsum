@@ -10,7 +10,7 @@
     "font-awesome": "*",
     "lodash": "*",
     "momentjs": "*",
-    "foundation": "*"
+    "foundation": "5.4.1"
   },
   "devDependencies": {
     "angular-mocks": "*"
