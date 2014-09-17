@@ -3,3 +3,4 @@ bower_components/
 coverage/
 www/
 npm-debug.log
+docs/build

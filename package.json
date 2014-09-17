@@ -18,6 +18,7 @@
     "gulp-jade": "*",
     "gulp-plug": "*",
     "gulp-rename": "*",
+    "gulp-rimraf": "*",
     "gulp-sass": "*",
     "gulp-sourcemaps": "*",
     "gulp-webserver": "*"
@@ -25,6 +26,8 @@
   "devDependencies": {
     "chai": "*",
     "cucumber": "*",
+    "dgeni": "*",
+    "dgeni-packages": "*",
     "karma": "*",
     "karma-cli": "*",
     "karma-coffee-preprocessor": "*",
