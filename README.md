@@ -31,7 +31,7 @@ HOST=http://localhost:8000 BROWSER=chrome npm run test:functional
 npm run test:functional
 ```
 
-### Submodule
+### Submodules
 
 ```
 git submodule foreach git pull origin master
@@ -40,3 +40,8 @@ git submodule foreach git pull origin master
 ### Livereload
 
 [Chrome extention](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
+
+### Documentation
+
+    # Generate docs using dgeni
+    npm run docs

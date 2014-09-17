@@ -3,7 +3,7 @@ dgeni = require 'dgeni'
 path = require 'path'
 rimraf = require 'gulp-rimraf'
 
-gulp.task 'doc', ['app', 'clean-docs'], (done) ->
+gulp.task 'docs', ['app', 'clean-docs'], (done) ->
   new dgeni [
     require path.join __dirname, '../../..', 'docs/config.coffee'
   ]
