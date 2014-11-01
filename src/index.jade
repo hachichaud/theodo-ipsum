@@ -1,14 +1,23 @@
 doctype html
-html(lang='en', ng-app='boilerplate')
+html(lang="en", ng-app="%module%")
   head
     title Atom Angular Boilerplate
-    meta(charset='utf-8')
-    link(rel='icon', type='image/x-icon', href='/favicon.ico')
-    link(rel='stylesheet', href='/css/boilerplate-styles.css')
-  body
+    meta(charset="utf-8")
+    link(rel="icon", type="image/x-icon", href="/favicon.ico")
+    link(rel="stylesheet", href="%styles%/vendor.css")
+    link(rel="stylesheet", href="%styles%/app.css")
+  body(
+    layout="vertical"
+    md-theme="orange"
+  )
+    base(href="/")
+    md-toolbar
+      .md-toolbar-tools
+        span Atom Angular Boilerplate
+    md-content.md-padding(
+      ui-view
+    )
 
-    main(ui-view)
-
-    script(src='/js/boilerplate-vendor.js')
-    script(src='/js/boilerplate-templates.js')
-    script(src='/js/boilerplate-app.js')
+    script(src="%scripts%/vendor.js")
+    script(src="%scripts%/app.js")
+    script(src="%scripts%/templates.js")

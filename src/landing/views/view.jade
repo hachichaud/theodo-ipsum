@@ -1,3 +1,19 @@
-h1(translate="HOME_TITLE")
+md-card
+  md-subheader
+    h1(translate="HOME_TITLE")
+    p(translate="HOME_TEXT")
 
-p(translate="HOME_TEXT")
+  div(
+    layout="horizontal"
+    layout-align="space-around"
+  )
+
+    md-button(
+      href="https://github.com/atom-angular/boilerplate"
+    ) Check the code on&nbsp;
+      i.fa.fa-github
+      |   GitHub
+
+    md-button.md-primary(
+      href="https://github.com/atom-angular/styleguide"
+    ) Read the styleguide

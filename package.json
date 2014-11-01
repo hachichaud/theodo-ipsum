@@ -16,12 +16,15 @@
     "gulp-angular-templatecache": "*",
     "gulp-coffee": "*",
     "gulp-concat": "*",
+    "gulp-filter": "*",
     "gulp-jade": "*",
     "gulp-plug": "*",
+    "gulp-plumber": "*",
     "gulp-rename": "*",
+    "gulp-replace": "*",
     "gulp-rimraf": "*",
-    "gulp-sass": "*",
     "gulp-sourcemaps": "*",
+    "gulp-stylus": "*",
     "gulp-webserver": "*"
   },
   "devDependencies": {
@@ -37,6 +40,7 @@
     "karma-mocha": "*",
     "karma-phantomjs-launcher": "*",
     "karma-sinon-chai": "*",
+    "main-bower-files": "^2.1.0",
     "protractor": "*",
     "sinon": "*"
   }

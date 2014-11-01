@@ -1,8 +1,8 @@
-angular.module 'boilerplate.landing'
+angular.module '%module%.landing'
 .config ($translateProvider) ->
   $translateProvider.translations 'en',
     HOME_TITLE: 'Welcome'
-    HOME_TEXT: 'This is the beginning of an extraodinary app...'
+    HOME_TEXT: 'This is the beginning of an extraordinary app...'
 
   $translateProvider.translations 'fr',
     HOME_TITLE: 'Bienvenue'

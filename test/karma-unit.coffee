@@ -1,14 +1,18 @@
+parameters = require '../utils/build/parameters.coffee'
+
+coffeeFiles = "#{parameters.paths.src.main}/**/*.coffee"
+
 module.exports = (config) ->
-  config.set
+  karmaConfig =
     basePath: '../'
 
     files: [
-      'www/js/boilerplate-vendor.js'
-      'www/js/boilerplate-templates.js'
+      "#{parameters.paths.www.scripts}/#{parameters.files.vendors.scripts}"
+      # TODO Consider adding html2js to tests directives/templates
       'bower_components/angular-mocks/angular-mocks.js'
-      'src/app.coffee'
-      'src/**/module.coffee'
-      'src/**/*.coffee'
+      "#{parameters.paths.src.main}/*.coffee"
+      "#{parameters.paths.src.main}/**/module.coffee"
+      coffeeFiles
       'test/specs/**/*.coffee'
     ]
 
@@ -19,8 +23,6 @@ module.exports = (config) ->
 
     preprocessors:
       'test/specs/**/*.coffee': 'coffee'
-      'src/**/*.coffee': 'coffee'
-#      'app/**/*.coffee':  'coverage'
 
     reporters: [
       'dots'
@@ -37,3 +39,8 @@ module.exports = (config) ->
 
     logLevel:       config.LOG_WARN
     autoWatch:      true
+
+  karmaConfig.preprocessors[coffeeFiles] = 'coffee'
+# karmaConfig.preprocessors[coffeeFiles] = 'coverage'
+
+  config.set karmaConfig

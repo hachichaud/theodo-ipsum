@@ -1,7 +1,0 @@
-src: src/**/*.scss
-dest: www/css/
-
-pipeline:
-  sass:
-  concat:
-    'boilerplate-styles.css'
