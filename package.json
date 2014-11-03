@@ -6,7 +6,8 @@
     "start": "gulp watch",
     "test": "karma start test/karma-unit.coffee --single-run",
     "test:unit": "karma start test/karma-unit.coffee",
-    "test:functional": "webdriver-manager update && protractor --require coffee-script/register test/protractor.conf.coffee"
+    "test:functional": "webdriver-manager update && protractor --require coffee-script/register test/protractor.conf.coffee",
+    "docs": "gulp docs"
   },
   "dependencies": {
     "bower": "*",
@@ -15,16 +16,22 @@
     "gulp-angular-templatecache": "*",
     "gulp-coffee": "*",
     "gulp-concat": "*",
+    "gulp-filter": "*",
     "gulp-jade": "*",
     "gulp-plug": "*",
+    "gulp-plumber": "*",
     "gulp-rename": "*",
-    "gulp-sass": "*",
+    "gulp-replace": "*",
+    "gulp-rimraf": "*",
     "gulp-sourcemaps": "*",
+    "gulp-stylus": "*",
     "gulp-webserver": "*"
   },
   "devDependencies": {
     "chai": "*",
     "cucumber": "*",
+    "dgeni": "*",
+    "dgeni-packages": "*",
     "karma": "*",
     "karma-cli": "*",
     "karma-coffee-preprocessor": "*",
@@ -33,6 +40,7 @@
     "karma-mocha": "*",
     "karma-phantomjs-launcher": "*",
     "karma-sinon-chai": "*",
+    "main-bower-files": "^2.1.0",
     "protractor": "*",
     "sinon": "*"
   }

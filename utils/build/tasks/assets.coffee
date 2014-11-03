@@ -1,8 +1,9 @@
 gulp = require 'gulp'
-rename = require 'gulp-rename'
+plumber = require 'gulp-plumber'
+
+parameters = require '../parameters.coffee'
 
 gulp.task 'assets', ->
-  gulp.src 'src/**/assets/**'
-  .pipe rename (path) ->
-    path.dirname = ''
-  .pipe gulp.dest 'www/'
+  gulp.src "#{parameters.paths.src.assets}/**"
+  .pipe plumber()
+  .pipe gulp.dest parameters.paths.www.main

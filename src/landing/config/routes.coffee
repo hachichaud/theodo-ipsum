@@ -1,4 +1,4 @@
-angular.module 'boilerplate.landing'
+angular.module '%module%.landing'
 .config ($stateProvider) ->
   $stateProvider
   .state 'landing',
