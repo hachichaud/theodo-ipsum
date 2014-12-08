@@ -4,16 +4,19 @@ md-card
     p(translate="HOME_TEXT")
 
   div(
-    layout="horizontal"
+    layout="row"
     layout-align="space-around"
+    layout-sm="column"
   )
 
     md-button(
       href="https://github.com/atom-angular/boilerplate"
+      aria-label="Check the code on GitHub"
     ) Check the code on&nbsp;
       i.fa.fa-github
       |   GitHub
 
     md-button.md-primary(
       href="https://github.com/atom-angular/styleguide"
+      aria-label="Check the styleguide"
     ) Read the styleguide
