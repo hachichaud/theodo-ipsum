@@ -4,6 +4,7 @@ plumber = require 'gulp-plumber'
 replace = require 'gulp-replace'
 sourcemaps = require 'gulp-sourcemaps'
 stylus = require 'gulp-stylus'
+wiredep = require('wiredep').stream
 
 parameters = require '../parameters.coffee'
 
@@ -13,6 +14,8 @@ gulp.task 'styles', ->
   .pipe parameters.angular.module.replacer replace
   .pipe parameters.folders.scripts.replacer replace
   .pipe sourcemaps.init()
+  .pipe wiredep
+    devDependencies: parameters.env is not 'production'
   .pipe stylus
     'include css': true
   .pipe concat parameters.files.styles

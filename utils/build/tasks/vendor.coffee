@@ -3,21 +3,19 @@ concat = require 'gulp-concat'
 filter = require 'gulp-filter'
 mainBowerFiles = require 'main-bower-files'
 plumber = require 'gulp-plumber'
+wiredep = require 'wiredep'
 
 parameters = require '../parameters.coffee'
 
 gulp.task 'vendor', ->
   # Scripts
-  gulp.src mainBowerFiles()
+  files = wiredep
+      devDependencies: parameters.env is not 'production'
+    .js
+  gulp.src files
   .pipe filter '**/*.js'
   .pipe concat parameters.files.vendors.scripts
   .pipe gulp.dest parameters.paths.www.scripts
-
-  # Styles
-  gulp.src mainBowerFiles()
-  .pipe filter '**/*.css'
-  .pipe concat parameters.files.vendors.styles
-  .pipe gulp.dest parameters.paths.www.styles
 
   # Fonts
   gulp.src mainBowerFiles()

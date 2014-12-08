@@ -4,6 +4,7 @@ concat = require 'gulp-concat'
 plumber = require 'gulp-plumber'
 replace = require 'gulp-replace'
 sourcemaps = require 'gulp-sourcemaps'
+wiredep = require('wiredep').stream
 
 parameters = require '../parameters.coffee'
 

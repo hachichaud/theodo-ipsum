@@ -25,7 +25,8 @@
     "gulp-rimraf": "*",
     "gulp-sourcemaps": "*",
     "gulp-stylus": "*",
-    "gulp-webserver": "*"
+    "gulp-webserver": "*",
+    "wiredep": "*"
   },
   "devDependencies": {
     "chai": "*",
