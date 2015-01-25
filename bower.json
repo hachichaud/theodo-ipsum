@@ -3,23 +3,8 @@
   "version": "0.0.1",
   "dependencies": {
     "angular": "*",
-    "angular-material": "*",
     "angular-translate": "*",
     "angular-ui-router": "*",
-    "angulartics": "*",
-    "font-awesome": "*",
-    "lodash": "*",
-    "momentjs": "*"
-  },
-  "devDependencies": {
-    "angular-mocks": "*"
-  },
-  "overrides": {
-    "angulartics": {
-      "main": [
-        "src/angulartics.js",
-        "src/angulartics-ga.js"
-      ]
-    }
+    "lodash": "*"
   }
 }

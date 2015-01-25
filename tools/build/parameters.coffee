@@ -12,10 +12,10 @@ assetsPath = "#{srcPath}/#{assetsFolder}"
 
 wwwPath = 'www'
 scriptsPlaceholder = '%scripts%'
-scriptsFolder = 'scripts'
+scriptsFolder = 'js'
 scriptsPath = "#{wwwPath}/#{scriptsFolder}"
 stylesPlaceholder = '%styles%'
-stylesFolder = 'styles'
+stylesFolder = 'css'
 stylesPath = "#{wwwPath}/#{stylesFolder}"
 
 config =

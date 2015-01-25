@@ -1,14 +1,14 @@
 ###*
   @ngdoc object
   @name storage
-  @module %module%.utils
+  @module %module%.common
   @description
 
   This value object is an application-wide data-store.
   It's published in `$rootScope` for easy-access in views.
 ###
 
-angular.module '%module%.utils'
+angular.module '%module%.common'
 .value 'storage', {}
 
 .run ($rootScope, storage) ->

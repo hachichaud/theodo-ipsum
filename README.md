@@ -12,36 +12,3 @@ npm install
 npm start
 # http://localhost:8000
 ```
-
-### Tests
-
-```bash
-# Unit tests - Karma + mocha + chai
-npm run test:unit
-
-# Functional tests - Protractor + chai + cucumber
-# Available options:
-# HOST     -> http://localhost:8000
-# BROWSER  -> chrome | firefox | phantomjs
-# SELENIUM -> http://127.0.0.1:4444/wd/hub
-# You need specify a selenium server or to install one with!
-# Local server must be launched: npm start &
-node_modules/.bin/webdriver-manager update
-HOST=http://localhost:8000 BROWSER=chrome npm run test:functional
-npm run test:functional
-```
-
-### Submodules
-
-```
-git submodule foreach git pull origin master
-```
-
-### Livereload
-
-[Chrome extention](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
-
-### Documentation
-
-    # Generate docs using dgeni
-    npm run docs
