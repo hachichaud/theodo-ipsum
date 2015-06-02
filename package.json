@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate",
+  "name": "theodo-ipsum",
   "version": "0.0.1",
   "scripts": {
     "postinstall": "bower install && gulp build",
