@@ -24,6 +24,7 @@
     "gulp-webserver": "*",
     "main-bower-files": "^2.5.0",
     "require-dir": "^0.1.0",
-    "wiredep": "*"
+    "wiredep": "*",
+    "gulp-less": "~3.0.3"
   }
 }

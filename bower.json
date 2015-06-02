@@ -5,6 +5,8 @@
     "angular": "*",
     "angular-translate": "*",
     "angular-ui-router": "*",
-    "lodash": "*"
+    "lodash": "*",
+    "angular-bootstrap": "~0.13.0",
+    "bootstrap": "~3.3.4"
   }
 }

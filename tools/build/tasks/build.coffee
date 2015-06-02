@@ -4,5 +4,6 @@ gulp.task 'build', [
   'vendor'
   'index'
   'app'
+  'styles'
   'templates'
 ]

@@ -3,6 +3,7 @@ concat = require 'gulp-concat'
 filter = require 'gulp-filter'
 mainBowerFiles = require 'main-bower-files'
 plumber = require 'gulp-plumber'
+less = require 'gulp-less'
 wiredep = require 'wiredep'
 
 parameters = require '../parameters.coffee'
@@ -27,3 +28,10 @@ gulp.task 'vendor', ->
       '**/*.otf'
     ]
   .pipe gulp.dest "#{parameters.paths.www.main}/fonts"
+
+  # Css
+  gulp.src mainBowerFiles()
+  .pipe filter ['**/*.less', '**/*.css']
+  .pipe less()
+  .pipe concat parameters.files.vendors.styles
+  .pipe gulp.dest "#{parameters.paths.www.styles}"

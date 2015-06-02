@@ -10,4 +10,5 @@
 angular.module '%module%', [
   '%module%.common'
   '%module%.landing'
+  '%module%.generator'
 ]
