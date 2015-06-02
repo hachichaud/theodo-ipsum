@@ -7,7 +7,7 @@ modulePlaceholder = '%module%'
 
 srcPath = 'src'
 assetsPlaceholder = '%assets%'
-assetsFolder = 'assets'
+assetsFolder = 'common/assets'
 assetsPath = "#{srcPath}/#{assetsFolder}"
 
 wwwPath = 'www'

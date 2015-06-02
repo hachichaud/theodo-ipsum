@@ -1,3 +1,6 @@
 h1 YOLO
 
-.word(ng-repeat="word in words") {{word}}
+span {{words[0]}}
+span.ipsum(ng-repeat="ipsumBit in ipsum track by $index")
+  span {{ipsumBit}}
+  span {{words[$index + 1]}}
